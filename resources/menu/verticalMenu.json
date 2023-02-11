@@ -428,6 +428,23 @@
       ]
     },
     {
+      "name": "Withdraw Request",
+      "icon": "menu-icon tf-icons bx bx-money-withdraw",
+      "slug": "po",
+      "submenu": [
+        {
+          "url": "admin/po/list",
+          "name": "List",
+          "slug": "po-list"
+        },
+        {
+          "url": "admin/po/list",
+          "name": "Preview",
+          "slug": "po-list"
+        }
+      ]
+    },
+    {
       "name": "Invoice2",
       "icon": "menu-icon tf-icons bx bx-food-menu",
       "slug": "app-invoice",
