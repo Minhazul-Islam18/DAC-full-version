@@ -60,10 +60,21 @@
                                 height="110" width="110" alt="User avatar" />
                             <div class="user-info text-center">
                                 <h5 class="mb-2">Yabre Mohammad</h5>
-                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalCenter">
-                                    <span class="badge bg-label-info">Certified Official Public Account</span>
+                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <span class="badge bg-label-info">Certified
+                                        Official Public Account</span>
                                     <span class="badge bg-white text-secondary badge-notifications px-2">?</span>
                                 </a>
+                            </div>
+                            <div class="collapse mt-3" id="collapseExample">
+                                <div class="d-grid d-sm-flex py-3 px-1 border rounded-2 border-success">
+                                    <img src="{{ asset('assets/img/elements/1.jpg') }}" alt="collapse-image" height="65px"
+                                        class="mx-2 mb-sm-0 mb-2 w-20">
+                                    <span class="text-success">
+                                        After through verification, the Public official account is Certified authentic.
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -219,7 +230,7 @@
                 <li class="nav-item"><a class="nav-link" href="{{ url('admin/po/connections') }}"><i
                             class="bx bx-link-alt me-1"></i>Connections</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url('admin/po/statistics') }}"><i
-                            class='bx bx-stats'></i>Expenses statistics</a></li>
+                            class='bx bx-stats me-1'></i>Earn statistics</a></li>
             </ul>
             <hr>
             <!-- Change Password -->

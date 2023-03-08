@@ -322,9 +322,12 @@ Route::group(['prefix' => 'admin'], function () {
   Route::get('user/view/account', [UserManagementController::class, 'userView'])->name('user-view-account');
   Route::get('user/view/security', [UserManagementController::class, 'userViewSec'])->name('user-view-security');
   Route::get('user/view/billing', [UserManagementController::class, 'userViewWallet'])->name('user-view-billing');
+  Route::get('user/view/statistics', [UserManagementController::class, 'userViewStatistics'])->name('user-view-billing');
   Route::get('user/view/notifications', [UserManagementController::class, 'userViewNotifications'])->name(
     'user-view-notifications'
   );
+  Route::get('withdrawal/list', [UserManagementController::class, 'poWithdrawalList'])->name('withdrawal-list');
+  Route::get('withdrawal/profile', [UserManagementController::class, 'poWithdrawalProfile'])->name('withdrawal-profile');
   Route::get('po/list', [UserManagementController::class, 'PoList'])->name('po-list');
   Route::get('po/account', [UserManagementController::class, 'poView'])->name('po-view-account');
   Route::get('po/security', [UserManagementController::class, 'poViewSec'])->name('po-view-security');
@@ -335,6 +338,8 @@ Route::group(['prefix' => 'admin'], function () {
   Route::get('po/connections', [UserManagementController::class, 'poViewConnections'])->name('po-view-connections');
   Route::get('po/statistics', [UserManagementController::class, 'poViewStatistics'])->name('po-view-statistics');
   Route::get('po/earnings', [UserManagementController::class, 'poViewEarnings'])->name('po-view-earnings');
+  Route::get('ctd-earnings/list', [UserManagementController::class, 'CTDEarnings'])->name('earn-ctd-list');
+  Route::get('ctd-earnings/preview/{earner?}', [UserManagementController::class, 'CTDEarningsPreview'])->name('earn-ctd-preview');
   Route::get('ctd/preview', [CtdController::class, 'previewCTD'])->name('ctd-preview');
   Route::get('ctd/edit', [CtdController::class, 'edit'])->name('ctd-edit');
   Route::get('content-gallery-settings', [GalleryController::class, 'settings'])->name('content-gallery.setting');

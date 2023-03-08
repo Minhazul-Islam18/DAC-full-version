@@ -135,15 +135,15 @@ class UserManagementController extends Controller
       ->toArray();
     return view('content.user_management.statistics', compact('countryData'));
   }
-  public function poViewStatistics()
-  {
-    $countries = new Countries();
-    $countryData = $countries
-      ->all()
-      ->pluck('name.common')
-      ->toArray();
-    return view('content.user_management.statistics', compact('countryData'));
-  }
+  // public function poViewStatistics()
+  // {
+  //   $countries = new Countries();
+  //   $countryData = $countries
+  //     ->all()
+  //     ->pluck('name.common')
+  //     ->toArray();
+  //   return view('content.user_management.po_statistics', compact('countryData'));
+  // }
   public function poViewEarnings()
   {
     $countries = new Countries();
@@ -152,6 +152,42 @@ class UserManagementController extends Controller
       ->pluck('name.common')
       ->toArray();
     return view('content.user_management.po_earnings', compact('countryData'));
+  }
+  public function poWithdrawalList()
+  {
+    $countries = new Countries();
+    $countryData = $countries
+      ->all()
+      ->pluck('name.common')
+      ->toArray();
+    return view('content.user_management.po_withdrawal_list', compact('countryData'));
+  }  
+  public function poWithdrawalProfile()
+  {
+    $countries = new Countries();
+    $countryData = $countries
+      ->all()
+      ->pluck('name.common')
+      ->toArray();
+    return view('content.user_management.withdrawal_profile', compact('countryData'));
+  }  
+  public function CTDEarnings ()
+  {
+    $countries = new Countries();
+    $countryData = $countries
+      ->all()
+      ->pluck('name.common')
+      ->toArray();
+    return view('content.user_management.earningsonCTD', compact('countryData'));
+  }  
+  public function CTDEarningsPreview ($earner = null)
+  {
+    $countries = new Countries();
+    $countryData = $countries
+      ->all()
+      ->pluck('name.common')
+      ->toArray();
+    return view('content.user_management.earner_preview', compact('countryData','earner'));
   }
 
   /**

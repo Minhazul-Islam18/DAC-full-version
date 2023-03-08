@@ -383,7 +383,8 @@
       "name": "Public Officials",
       "icon": "menu-icon tf-icons bx bxs-user-badge",
       "slug": "po",
-      "submenu": [{
+      "submenu": [
+        {
           "url": "admin/po/list",
           "name": "List",
           "slug": "po-list"
@@ -430,17 +431,34 @@
     {
       "name": "Withdraw Request",
       "icon": "menu-icon tf-icons bx bx-money-withdraw",
-      "slug": "po",
+      "slug": "withdrawal",
       "submenu": [
         {
-          "url": "admin/po/list",
+          "url": "admin/withdrawal/list",
           "name": "List",
-          "slug": "po-list"
+          "slug": "withdrawal-list"
         },
         {
-          "url": "admin/po/list",
+          "url": "admin/withdrawal/profile",
           "name": "Preview",
-          "slug": "po-list"
+          "slug": "withdrawal-profile"
+        }
+      ]
+    },
+    {
+      "name": "Earnings on CTD",
+      "icon": "menu-icon tf-icons bx bx-dollar-circle",
+      "slug": "earn-ctd",
+      "submenu": [
+        {
+          "url": "admin/ctd-earnings/list",
+          "name": "List",
+          "slug": "earn-ctd-list"
+        },
+        {
+          "url": "admin/ctd-earnings/preview",
+          "name": "Preview",
+          "slug": "earn-ctd-preview"
         }
       ]
     },

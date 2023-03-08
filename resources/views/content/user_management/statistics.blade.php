@@ -240,8 +240,21 @@
                                     </div>
                                 </div>
                                 <span class="badge bg-label-info rounded p-2">
-                                    <img src="http://127.0.0.1:8000/assets/img/icons/misc/cart-tick.png" alt=""
-                                        style="width: 1.32em">
+                                    <svg fill="#000000" viewBox="0 0 24 24" id="cart-check" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color" height="auto" width="1.30rem">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier">
+                                        
+                                        <path id="secondary" d="M18.5,20.5A1.5,1.5,0,1,1,17,19,1.5,1.5,0,0,1,18.5,20.5ZM11,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,11,19Zm3.71-9.29,4-4a1,1,0,1,0-1.42-1.42L14,7.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0Z" style="fill: #2ca9bc;"/>
+                                        
+                                        <path id="primary" d="M18.22,17H9.8a2,2,0,0,1-2-1.55L5.2,4H3A1,1,0,0,1,3,2H5.2a2,2,0,0,1,2,1.55L9.8,15h8.42L20,7.76A1,1,0,0,1,22,8.24l-1.81,7.25A2,2,0,0,1,18.22,17Z" style="fill: #39da8a;"/>
+                                        
+                                        </g>
+                                        
+                                        </svg>
                                 </span>
                             </div>
                         </div>
@@ -277,8 +290,7 @@
                                     </div>
                                 </div>
                                 <span class="badge bg-label-info rounded p-2">
-                                    <img src="http://127.0.0.1:8000/assets/img/icons/misc/wallet-icon-png.png"
-                                        alt="" style="width: 1.32em">
+                                    <i class='bx bxs-wallet'></i>
                                 </span>
                             </div>
                         </div>
@@ -298,10 +310,10 @@
                         </div>
                     </div>
                     <!-- /Range Picker-->
-                    <div class="container-fluid p-0">
+                    <div class="container-fluid p-0 earning-stat">
                         <div class="row my-3">
                             <div class="col-md-8 d-flex">
-                                <span class="badge badge-center rounded-pill bg-label-success w-px-30 h-px-30 me-2"><i
+                                <span class="badge badge-center rounded-pill bg-label-success w-px-40 h-px-40 me-2"><i
                                         class="fa-solid fa-sack-dollar"></i></span>
                                 <div class="d-flex flex-column">
                                     <div class="fw-bold h6 mb-1">Balance</div>
@@ -314,13 +326,26 @@
                         </div>
                         <div class="row my-3">
                             <div class="col-md-8 d-flex">
-                                <span class="badge badge-center rounded-pill bg-label-danger w-px-30 h-px-30 me-2">
-                                    <img src="{{ asset('assets/img/icons/misc/cart-tick.png') }}" alt=""
-                                        style="width: 15px">
+                                <span class="badge badge-center rounded-pill bg-label-warning w-px-40 h-px-40 me-2">
+                                    <svg fill="#000000" viewBox="0 0 24 24" id="cart-check" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color" height="auto" width="1.30rem">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier">
+                                        
+                                        <path id="secondary" d="M18.5,20.5A1.5,1.5,0,1,1,17,19,1.5,1.5,0,0,1,18.5,20.5ZM11,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,11,19Zm3.71-9.29,4-4a1,1,0,1,0-1.42-1.42L14,7.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0Z" style="fill: #2ca9bc;"/>
+                                        
+                                        <path id="primary" d="M18.22,17H9.8a2,2,0,0,1-2-1.55L5.2,4H3A1,1,0,0,1,3,2H5.2a2,2,0,0,1,2,1.55L9.8,15h8.42L20,7.76A1,1,0,0,1,22,8.24l-1.81,7.25A2,2,0,0,1,18.22,17Z" style="fill: #ee941c;"/>
+                                        
+                                        </g>
+                                        
+                                        </svg>
                                 </span>
                                 <div class="d-flex flex-column">
-                                    <div class="fw-bold h6 mb-1">Total expenses of applying for tenders</div>
-                                    <small>57 CTD's Paid to Postulate</small>
+                                    <div class="fw-bold h6 mb-1">Total expenses on Payments for Cal for Tender Documents (CTD)</div>
+                                    <small>57 CTD's Purchased for Appling Tenders</small>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -329,9 +354,23 @@
                         </div>
                         <div class="row my-3">
                             <div class="col-md-8 d-flex">
-                                <span class="badge badge-center rounded-pill bg-label-success w-px-30 h-px-30 me-2"> <img
-                                        src="{{ asset('assets/img/icons/misc/wallet-icon-png.png') }}" alt=""
-                                        style="width: 16px"></span>
+                                <span class="badge badge-center rounded-pill bg-label-warning w-px-40 h-px-40 me-2"> 
+                                    <i class='bx bxs-file-find'></i>
+                                </span>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold h6 mb-1">Total Expenses on Payments for CTD Consultations</div>
+                                    <small>89 CTD's Purchased for Consulting</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="text-end d-block">78000</span>
+                            </div>
+                        </div>
+                         <div class="row my-3">
+                            <div class="col-md-8 d-flex">
+                                <span class="badge badge-center rounded-pill bg-label-warning w-px-40 h-px-40 me-2"> 
+                                    <i class='bx bxs-wallet'></i>
+                                </span>
                                 <div class="d-flex flex-column">
                                     <div class="fw-bold h6 mb-1">Total Cost</div>
                                     <small>Total Expenses</small>
