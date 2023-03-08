@@ -48,7 +48,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-start justify-content-between">
                         <div class="content-left">
-                            <span>Approved</span>
+                            <span>Approvedd</span>
                             <div class="d-flex align-items-end mt-2">
                                 <h4 class="mb-0 me-2">21,459</h4>
                                 <small class="text-success">(+29%)</small>
@@ -130,7 +130,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-start justify-content-between">
                         <div class="content-left">
-                            <span>Rejected</span>
+                            <span>Rejecteded</span>
                             <div class="d-flex align-items-end mt-2">
                                 <h4 class="mb-0 me-2">237</h4>
                                 <small class="text-success">(+42%)</small>
@@ -149,7 +149,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-start justify-content-between">
                         <div class="content-left">
-                            <span>Suspended</span>
+                            <span>Suspendeded</span>
                             <div class="d-flex align-items-end mt-2">
                                 <h4 class="mb-0 me-2">237</h4>
                                 <small class="text-success">(+42%)</small>
@@ -189,12 +189,12 @@
                     </div> <div class="">
                         <select class="form-select" name="" id="">
                             <option selected>Payment Status</option>
-                            <option value="">Approve</option>
-                            <option value="">Suspend</option>
+                            <option value="">Approved</option>
+                            <option value="">Suspended</option>
                             <option value="">Pending</option>
                             <option value="">Processing</option>
                             <option value="">Paid</option>
-                            <option value="">Reject</option>
+                            <option value="">Rejected</option>
                         </select>
                     </div>
                 </div>
@@ -263,12 +263,12 @@
                         <td>
                             <div class="mb-0">
                               <select style="color: #000" class=" form-select bg-success" name="" id="">
-                                    <option selected>Approve</option>
-                                    <option value="">Suspend</option>
+                                    <option selected>Approved</option>
+                                    <option value="">Suspended</option>
                                     <option value="">Pending</option>
                                     <option value="">Processing</option>
                                     <option value="">Paid</option>
-                                    <option value="">Reject</option>
+                                    <option value="">Rejected</option>
                                 </select>
                             </div>
                         </td>
@@ -328,12 +328,12 @@
                         <td>
                             <div class="mb-0">
                               <select style="color: #000" class=" form-select bg-danger" name="" id="">
-                                    <option >Approve</option>
-                                    <option value="">Suspend</option>
+                                    <option >Approved</option>
+                                    <option value="">Suspended</option>
                                     <option value="">Pending</option>
                                     <option value="">Processing</option>
                                     <option value="">Paid</option>
-                                    <option value="" selected>Reject</option>
+                                    <option value="" selected>Rejected</option>
                                 </select>
                             </div>
                         </td>
@@ -391,12 +391,12 @@
                         <td>
                             <div class="mb-0">
                               <select style="color: #000" class=" form-select bg-warning" name="" id="">
-                                    <option >Approve</option>
-                                    <option value="">Suspend</option>
+                                    <option >Approved</option>
+                                    <option value="">Suspended</option>
                                     <option value="" selected>Pending</option>
                                     <option value="">Processing</option>
                                     <option value="">Paid</option>
-                                    <option value="">Reject</option>
+                                    <option value="">Rejected</option>
                                 </select>
                             </div>
                         </td>
@@ -454,12 +454,12 @@
                         <td>
                             <div class="mb-0">
                               <select style="color: #000" class=" form-select bg-info" name="" id="">
-                                    <option >Approve</option>
-                                    <option value="">Suspend</option>
+                                    <option >Approved</option>
+                                    <option value="">Suspended</option>
                                     <option value="">Pending</option>
                                     <option value="" selected>Processing</option>
                                     <option value="">Paid</option>
-                                    <option value="">Reject</option>
+                                    <option value="">Rejected</option>
                                 </select>
                             </div>
                         </td>
@@ -517,12 +517,12 @@
                         <td>
                             <div class="mb-0">
                               <select style="color: #000" class=" form-select bg-success" name="" id="">
-                                    <option >Approve</option>
-                                    <option value="">Suspend</option>
+                                    <option >Approved</option>
+                                    <option value="">Suspended</option>
                                     <option value="">Pending</option>
                                     <option value="">Processing</option>
                                     <option value="" selected>Paid</option>
-                                    <option value="">Reject</option>
+                                    <option value="">Rejected</option>
                                 </select>
                             </div>
                         </td>

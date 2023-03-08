@@ -111,14 +111,14 @@
                             <div class="d-flex justify-content-start align-items-center user-name">
                                 <div class="avatar-wrapper">
                                     <div class="avatar avatar-sm me-3">
-                                        <img src="http://127.0.0.1:8000/assets/img/avatars/1.png" alt="Avatar"
+                                        <img src="{{ asset('assets/img/avatars/5.png')}}" alt="Avatar"
                                             class="rounded-circle">
                                         <span
                                             class="badge rounded-pill bg-success badge-dot badge-notifications user-luminos"></span>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <a href="http://127.0.0.1:8000/admin/user/view/account"
+                                    <a href="{{ route('user-view-account')}}"
                                         class="text-body text-truncate"><span class="fw-semibold">Zsazsa
                                             McCleverty</span></a><small
                                         class="text-success">zmcclevertye@soundcloud.com</small><span class="d-none">Burkina
@@ -130,14 +130,14 @@
                             <div class="d-flex justify-content-start align-items-center user-name">
                                 <div class="avatar-wrapper">
                                     <div class="avatar avatar-sm me-3">
-                                        <img src="http://127.0.0.1:8000/assets/img/avatars/3.png" alt="Avatar"
+                                        <img src="{{ asset('assets/img/avatars/3.png')}}" alt="Avatar"
                                             class="rounded-circle">
                                         <span
                                             class="badge rounded-pill bg-success badge-dot badge-notifications user-luminos"></span>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <a href="http://127.0.0.1:8000/admin/user/view/account"
+                                    <a href="{{ route('earn-ctd-preview', ['earner'=>'po'])}}"
                                         class="text-body text-truncate"><span class="fw-semibold">
                                             DAC-Rapide
                                         </span></a><small class="text-success">zmcclevertye@soundcloud.com</small><span
@@ -151,7 +151,7 @@
                         <td><span>150 000</span></td>
                         <td>
                             <div class="d-flex align-items-center">
-                                <a href="app/invoice/preview" data-bs-toggle="tooltip" class="text-body"
+                                <a href="{{ route('earn-ctd-preview', ['earner'=>'administrator'])}}" data-bs-toggle="tooltip" class="text-body"
                                     data-bs-placement="top" aria-label="Preview Invoice"
                                     data-bs-original-title="Preview Invoice"><i class="bx bx-show mx-1"></i>
                                 </a>
@@ -175,14 +175,14 @@
                             <div class="d-flex justify-content-start align-items-center user-name">
                                 <div class="avatar-wrapper">
                                     <div class="avatar avatar-sm me-3">
-                                        <img src="http://127.0.0.1:8000/assets/img/avatars/1.png" alt="Avatar"
+                                        <img src="{{ asset('assets/img/avatars/3.png')}}" alt="Avatar"
                                             class="rounded-circle">
                                         <span
                                             class="badge rounded-pill bg-success badge-dot badge-notifications user-luminos"></span>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <a href="http://127.0.0.1:8000/admin/user/view/account"
+                                    <a href="{{ route('earn-ctd-preview', ['earner'=>'po'])}}"
                                         class="text-body text-truncate"><span class="fw-semibold">
                                             DAC-Rapide
                                         </span></a><small class="text-success">zmcclevertye@soundcloud.com</small><span
@@ -195,16 +195,15 @@
                             <div class="d-flex justify-content-start align-items-center user-name">
                                 <div class="avatar-wrapper">
                                     <div class="avatar avatar-sm me-3">
-                                        <img src="http://127.0.0.1:8000/assets/img/avatars/3.png" alt="Avatar"
+                                        <img src="{{ asset('assets/img/avatars/1.png')}}" alt="Avatar"
                                             class="rounded-circle">
                                         <span
                                             class="badge rounded-pill bg-success badge-dot badge-notifications user-luminos"></span>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <a href="http://127.0.0.1:8000/admin/user/view/account"
-                                        class="text-body text-truncate"><span class="fw-semibold">Zsazsa
-                                            McCleverty</span></a><small
+                                    <a href="{{ route('po-view-account')}}"
+                                        class="text-body text-truncate"><span class="fw-semibold">Public officer account</span></a><small
                                         class="text-success">zmcclevertye@soundcloud.com</small><span
                                         class="d-none">Burkina
                                         Faso</span>
@@ -216,7 +215,7 @@
                         <td><span>150 000</span></td>
                         <td>
                             <div class="d-flex align-items-center">
-                                <a href="app/invoice/preview" data-bs-toggle="tooltip" class="text-body"
+                                <a href="{{ route('earn-ctd-preview', ['earner'=>'po'])}}" data-bs-toggle="tooltip" class="text-body"
                                     data-bs-placement="top" aria-label="Preview Invoice"
                                     data-bs-original-title="Preview Invoice"><i class="bx bx-show mx-1"></i>
                                 </a>

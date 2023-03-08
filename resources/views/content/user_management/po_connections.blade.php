@@ -229,8 +229,8 @@
                             class="bx bx-bell me-1"></i>Notifications</a></li>
                 <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i
                             class="bx bx-link-alt me-1"></i>Connections</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url('admin/po/statistics') }}"><i
-                            class='bx bx-stats me-1'></i>Expenses statistics</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url('admin/po/earnings') }}"><i
+                            class='bx bx-stats me-1'></i>Earn statistics</a></li>
             </ul>
             <hr>
             <!-- Connected Accounts -->

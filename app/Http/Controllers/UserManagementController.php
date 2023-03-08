@@ -135,6 +135,15 @@ class UserManagementController extends Controller
       ->toArray();
     return view('content.user_management.statistics', compact('countryData'));
   }
+    public function poViewStatistics()
+  {
+    $countries = new Countries();
+    $countryData = $countries
+      ->all()
+      ->pluck('name.common')
+      ->toArray();
+    return view('content.user_management.po_earnings', compact('countryData'));
+  }
   // public function poViewStatistics()
   // {
   //   $countries = new Countries();

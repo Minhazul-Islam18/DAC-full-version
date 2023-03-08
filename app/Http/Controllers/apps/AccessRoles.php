@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers\apps;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use PragmaRX\Countries\Package\Countries;
 
 class AccessRoles extends Controller
 {
   public function index()
   {
-    return view('content.apps.app-access-roles');
+    $countries = new Countries();
+    $countryData = $countries
+        ->all()
+        ->pluck('name.common')
+        ->toArray();
+    return view('content.apps.app-access-roles', compact('countryData'));
   }
 }

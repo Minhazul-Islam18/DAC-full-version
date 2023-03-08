@@ -281,6 +281,23 @@
 
                                 <div id="lotsPrice">
                                 </div>
+                                <div class="my-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option value="" selected>Choose One</option>
+                                            <option value="English">English</option>
+                                            <option value="French">French</option>
+                                        </select>
+                                        <label for="floatingSelect">Select Language</label>
+                                    </div>
+                                </div>
+                                <!-- Datetime Picker-->
+                                <div class="col-md-12 col-12 mb-4">
+                                    <label for="flatpickr-datetime" class="form-label">CTD Deadline</label>
+                                    <input type="text" class="form-control" placeholder="YYYY-MM-DD HH:MM"
+                                        id="flatpickr-datetime" />
+                                </div>
+                                <!-- /Datetime Picker-->
                             </div>
                             <div class="mt-3 d-flex justify-content-between">
                                 <button type="submit" class="btn btn-primary me-sm-3 me-1 data-submit">Update</button>
